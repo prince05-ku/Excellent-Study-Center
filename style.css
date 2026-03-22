@@ -1,19 +1,40 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
 /* home */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
-/* blog */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+blog */
+/* @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); */
 /* About */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,700;0,900;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); */
 /* Contact-us */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,700;0,900;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); */
 /* Footer */
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap'); */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0
+    padding: 0;
+}
+
+body {
+    font-family: PlayFair !important;
+    padding-top: 116px !important;
+    background: #cdcac5;
+}
+
+:root {
+    --ink: #04187c;
+    --ink2: #04187c;
+    --cream: #e9e5def3;
+    --cream2: #e1e1e1;
+    --gold: #C8922A;
+    --gold2: #E8B84B;
+    --gold3: #F5D07A;
+    --white: #ffffff;
+    --muted: #6B7280;
+    --border: #E2D9C8;
 }
 
 
@@ -29,7 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: rgba(10, 15, 30, .97);
+    background: linear-gradient(135deg, #04187c, #04187c, #1c0aa9, #3038d4);
     backdrop-filter: blur(20px);
     border-bottom: 1px solid rgba(200, 146, 42, .15);
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -38,20 +59,25 @@
 
 .esc-logo {
     font-family: 'Fraunces', serif;
-    color: #C8922A;
-    font-size: 1.2rem;
+    color: #fed506ec;
+    font-size: 1.5rem;
     font-weight: 700;
     text-decoration: none;
-    line-height: 1.1;
+    line-height: 1.5;
+    transition: all .3s;
+}
+
+.esc-logo:hover {
+    transform: translateY(-3px);
 }
 
 .esc-logo small {
     display: block;
     font-family: 'Plus Jakarta Sans', sans-serif;
-    font-size: .55rem;
+    font-size: .75rem;
     font-weight: 300;
     color: rgba(255, 255, 255, .4);
-    letter-spacing: .2em;
+    letter-spacing: .5em;
     text-transform: uppercase;
 }
 
@@ -59,35 +85,35 @@
     display: flex;
     align-items: center;
     gap: .2rem;
-    list-style: none
+    list-style: none;
 }
 
 .esc-nav li a {
     color: rgba(255, 255, 255, .65);
     text-decoration: none;
-    font-size: .85rem;
+    font-size: 1.3rem;
     padding: 8px 14px;
-    border-radius: 8px;
+    border-radius: 25px;
     transition: all .2s;
     font-weight: 400;
     display: block;
 }
 
 .esc-nav li a:hover {
-    color: #fff;
-    background: rgba(255, 255, 255, .07)
+    color: #C8922A;
+    background: #ffffff20;
 }
 
 .esc-nav li.active a {
     color: #fff;
-    background: rgba(255, 255, 255, .07)
+    background: rgba(255, 255, 255, .07);
 }
 
 .esc-header-cta {
-    background: linear-gradient(135deg, #C8922A, #E8B84B);
+    background: linear-gradient(135deg, #FBFF00ED, #E8B84B);
     color: #0A0F1E !important;
     font-weight: 700;
-    font-size: .82rem;
+    font-size: .90rem;
     padding: 10px 22px;
     border-radius: 50px;
     text-decoration: none;
@@ -97,7 +123,7 @@
 }
 
 .esc-header-cta:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     box-shadow: 0 8px 28px rgba(200, 146, 42, .45)
 }
 
@@ -129,7 +155,7 @@
     z-index: 9998;
     padding: 1.5rem 5%;
     border-bottom: 1px solid rgba(200, 146, 42, .1);
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: PlayFair !important;
 }
 
 .esc-mob-menu.open {
@@ -144,16 +170,17 @@
     border-bottom: 1px solid rgba(255, 255, 255, .05);
     text-decoration: none;
     transition: color .2s;
+
 }
 
 .esc-mob-menu a:hover {
-    color: #E8B84B
+    color: #E8B84B;
 }
 
 .esc-mob-menu a:last-child {
     border-bottom: none;
     color: #E8B84B;
-    font-weight: 700
+    font-weight: 700;
 }
 
 /* TICKER */
@@ -167,12 +194,12 @@
     left: 0;
     right: 0;
     z-index: 9997;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: PlayFair !important;
 }
 
 .esc-ticker-track {
     display: inline-flex;
-    animation: escTick 26s linear infinite
+    animation: escTick 26s linear infinite;
 }
 
 .esc-ticker-item {
@@ -206,9 +233,6 @@
 }
 
 /* Push content below fixed header+ticker */
-body {
-    padding-top: 116px !important
-}
 
 @media(max-width:768px) {
 
@@ -225,28 +249,15 @@ body {
 /* Homesection */
 
 
-:root {
-    --ink: #0A0F1E;
-    --ink2: #131929;
-    --cream: #F5F0E8;
-    --cream2: #EDE8DC;
-    --gold: #C8922A;
-    --gold2: #E8B84B;
-    --gold3: #F5D07A;
-    --white: #fff;
-    --muted: #6B7280;
-    --border: #E2D9C8;
-}
-
 .ep {
     font-family: 'Plus Jakarta Sans', sans-serif;
-    color: var(--ink)
+    color: var(--ink);
 }
 
 /* ── HERO ── */
 .ep-hero {
     min-height: 100vh;
-    background: var(--ink);
+    background: #02198c;
     position: relative;
     overflow: hidden;
     display: flex;
@@ -266,7 +277,7 @@ body {
     font-family: 'Fraunces', serif;
     font-size: clamp(100px, 16vw, 200px);
     font-weight: 900;
-    color: rgba(255, 255, 255, .025);
+    color: rgba(255, 255, 255, .050);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -318,9 +329,11 @@ body {
 }
 
 .ep-hero h1 .ln2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     display: block;
     color: transparent;
-    -webkit-text-stroke: 1.5px rgba(255, 255, 255, .3)
+    -webkit-text-stroke: 1.5px rgba(255, 255, 255, .4);
+    letter-spacing: 0.3rem;
 }
 
 .ep-hero h1 .ln3 {
@@ -368,7 +381,7 @@ body {
 }
 
 .ep-btn-gold:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
     color: var(--ink)
 }
 
@@ -390,6 +403,7 @@ body {
 }
 
 .ep-btn-ghost:hover {
+    transform: translateY(-4px);
     background: rgba(255, 255, 255, .1);
     color: #fff
 }
@@ -397,7 +411,7 @@ body {
 .ep-stats-bar {
     position: relative;
     z-index: 3;
-    border-top: 1px solid rgba(255, 255, 255, .07);
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
     padding: 0 5%;
     display: grid;
     grid-template-columns: repeat(4, 1fr)
@@ -405,7 +419,7 @@ body {
 
 .ep-hstat {
     padding: 2rem 0;
-    border-right: 1px solid rgba(255, 255, 255, .07);
+    border-right: 1px solid rgba(255, 255, 255, .20);
     text-align: center
 }
 
@@ -444,14 +458,15 @@ body {
 
 /* ── SECTION COMMONS ── */
 .ep-section {
-    padding: 100px 5%
+    padding: 100px 5%;
+
 }
 
 .ep-sl {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    font-size: .7rem;
+    gap: 10px;
+    font-size: .90rem;
     font-weight: 700;
     letter-spacing: .22em;
     text-transform: uppercase;
@@ -481,12 +496,12 @@ body {
     line-height: 1.1;
     color: var(--ink);
     letter-spacing: -.02em;
-    margin-bottom: .8rem
+    margin-bottom: .8rem;
 }
 
 .ep-h2 em {
     font-style: italic;
-    color: var(--gold);
+    color: var(--gold );
     font-weight: 300
 }
 
@@ -706,7 +721,7 @@ body {
     align-items: flex-start;
     gap: 1.5rem;
     padding: 1.8rem 0;
-    border-bottom: 1px solid rgba(255, 255, 255, .06)
+    border-bottom: 1px solid rgba(255, 255, 255, .6)
 }
 
 .ep-wl-item:last-child {
@@ -730,20 +745,20 @@ body {
 .ep-wl-title {
     font-weight: 700;
     font-size: 1rem;
-    color: #fff;
+    color: var(--gold);
     margin-bottom: 4px
 }
 
 .ep-wl-sub {
     font-size: .84rem;
-    color: rgba(255, 255, 255, .4);
+    color: var(--ink2);
     line-height: 1.65;
     font-weight: 300
 }
 
 .ep-why-card {
     background: rgba(255, 255, 255, .04);
-    border: 1px solid rgba(255, 255, 255, .07);
+    border: 1px solid rgba(255, 255, 255, .09);
     border-radius: 18px;
     padding: 1.6rem;
     transition: all .3s;
@@ -751,8 +766,8 @@ body {
 }
 
 .ep-why-card:hover {
-    background: rgba(200, 146, 42, .06);
-    border-color: rgba(200, 146, 42, .2)
+    background: rgba(200, 146, 42, .20);
+    border-color: rgba(200, 146, 42, .10)
 }
 
 .ep-why-card-icon {
@@ -763,14 +778,14 @@ body {
 
 .ep-why-card-title {
     font-weight: 700;
-    color: #fff;
+    color: var(--gold);
     font-size: .93rem;
     margin-bottom: .3rem
 }
 
 .ep-why-card-sub {
     font-size: .82rem;
-    color: rgba(255, 255, 255, .4);
+    color: var(--ink2);
     line-height: 1.6;
     font-weight: 300
 }
@@ -1400,17 +1415,6 @@ body {
 /* aboutsection */
 
 
-:root {
-    --ink: #0A0F1E;
-    --ink2: #131929;
-    --cream: #F5F0E8;
-    --gold: #C8922A;
-    --gold2: #E8B84B;
-    --white: #fff;
-    --muted: #6B7280;
-    --border: #E2D9C8;
-}
-
 .ab {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: var(--ink)
@@ -1578,11 +1582,16 @@ body {
 }
 
 .ab-stat-mini {
-    background: rgba(200, 146, 42, .08);
-    border: 1px solid rgba(200, 146, 42, .15);
+    background: rgba(214, 212, 209, 0.22);
+    border: 1px solid rgba(200, 146, 42, .26);
     border-radius: 14px;
     padding: 1.2rem;
-    text-align: center
+    text-align: center;
+    transition: all .3s;
+}
+
+.ab-stat-mini:hover{
+    transform: translateY(-4px);
 }
 
 .ab-stat-mini-n {
@@ -1941,17 +1950,6 @@ body {
 
 /* Blog section */
 
-
-
-:root {
-    --ink: #0A0F1E;
-    --gold: #C8922A;
-    --gold2: #E8B84B;
-    --cream: #F5F0E8;
-    --white: #fff;
-    --muted: #6B7280;
-    --border: #E2D9C8
-}
 
 .bl {
     font-family: 'Plus Jakarta Sans', sans-serif;
@@ -2412,17 +2410,6 @@ body {
 
 /* contactsection */
 
-
-:root {
-    --ink: #0A0F1E;
-    --gold: #C8922A;
-    --gold2: #E8B84B;
-    --cream: #F5F0E8;
-    --white: #fff;
-    --muted: #6B7280;
-    --border: #E2D9C8;
-    --green: #22C55E
-}
 
 .ct {
     font-family: 'Plus Jakarta Sans', sans-serif;
